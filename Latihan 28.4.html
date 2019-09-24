@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Website Layout</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body{
+			margin: 0;
+		}
+		/*style untuk header*/
+		.header{
+			background-color: #F1F1F1;
+			padding: 20px;
+			text-align: center;
+		}
+		/*style untuk navigation*/
+		.navigation{
+			overflow: hidden;
+			background-color: #03A9F4;
+		}
+		/*Style links di navigation*/
+		.navigation a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+		/*perubahab warna saat hover*/
+		.navigation a:hover{
+			background-color: #ddd;
+			color: black;
+		}
+		*{
+			box-sizing: border-box;
+		}
+		/*Tiga kolom float yang panjang ke bawahnya tidak sama*/
+		.aside, .article{
+			float: left;
+			padding: 10px;
+		}
+		/*Kolom pertama dan ketiga*/
+		.aside{
+			width: 25%;
+		}
+		/*Kolom kedua*/
+		.article{
+			width: 50%;
+		}
+		/*Responsive layout - kolom di container menjadi baris*/
+		@media (max-width: 600px){
+			.aside, .article{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="header">
+		<h1>Header</h1>
+	</div>
+
+	<div class="navigation">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	</div>
+
+	<div class="container">
+		<div class="aside">
+			<h2>Side</h2>
+			<p>Cara Menanam Strawberry di Polybag Halaman Rumah</p>
+		</div>
+		<div class="article">
+			<h2>Main Content</h2>
+			<p>Strawberry merupakan tanaman yang menghasilkan buah cantik dengan cita rasa yang nikmat sekaligus menyegarkan. Strawberry termasuk buah yang cukup populer di Indonesia. Hal ini dikarenakan kegiatan budidaya tanaman strawberry sudah dilakukan oleh para petani sejak lama untuk memperbanyak hasil produksi karena mengetahui bahwa strawberry termasuk buah yang disukai banyak orang.</p>
+			<p>Buah strawberry tidak jarang diolah menjadi makanan atau minuman tertentu, seperti selai, jus, dan masih banyak lagi. Kegunaannya juga bukan sebatas dimakan, lalu terasa nikmat, dan timbul keinginan untuk mengonsumsinya lagi. Lebih dari itu, strawberry juga tercatat mengantongi beragam kandungan yang memberi dampak manfaat terhadap kesehatan dan kecantikan.</p>
+		</div>
+		<div class="aside">
+			<h2>Side</h2>
+			<p>Dalam melakukan sesuatu yang baru, Anda perlu mencari tahu informasi selengkap-lengkapnya untuk mendukung proses dan mencegah terjadinya kebuntuan akibat bingung harus apa selanjutnya. Setali tiga uang dengan budidaya seledri, sebelum melakukan penanaman stroberi, Anda harus tahu syarat tumbuh tanaman strawberry.</p>
+		</div>
+	</div>
+</body>
+</html>
